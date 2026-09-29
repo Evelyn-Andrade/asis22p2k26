@@ -86,6 +86,7 @@
     <Compile Include="Modelos de controladores\ClsModeloCambiarContrasena.cs" />
     <Compile Include="Modelos de controladores\ClsModeloDashboard.cs" />
     <Compile Include="Modelos de controladores\ClsModeloEmpleado.cs" />
+    <Compile Include="Modelos de controladores\ClsModeloFacultad.cs" />
     <Compile Include="Modelos de controladores\ClsModeloMantenimientoApp.cs" />
     <Compile Include="Modelos de controladores\ClsModeloModulo.cs" />
     <Compile Include="Modelos de controladores\ClsModeloRoles.cs" />

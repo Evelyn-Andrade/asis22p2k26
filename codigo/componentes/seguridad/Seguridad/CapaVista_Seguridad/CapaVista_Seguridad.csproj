@@ -131,60 +131,6 @@
     <Compile Include="FrmRecuperacion.Designer.cs">
       <DependentUpon>FrmRecuperacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReportes\FrmReporteAsigAppPerf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteAsigAppPerf.Designer.cs">
-      <DependentUpon>FrmReporteAsigAppPerf.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteAsignacionAplicacionUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteAsignacionAplicacionUsuario.Designer.cs">
-      <DependentUpon>FrmReporteAsignacionAplicacionUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteAsignacionPerfiles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteAsignacionPerfiles.Designer.cs">
-      <DependentUpon>FrmReporteAsignacionPerfiles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteBitacora.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteBitacora.Designer.cs">
-      <DependentUpon>FrmReporteBitacora.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoAplicacioncs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoAplicacioncs.Designer.cs">
-      <DependentUpon>FrmReporteMantenimientoAplicacioncs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoEmpleado.Designer.cs">
-      <DependentUpon>FrmReporteMantenimientoEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoPerfiles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoPerfiles.Designer.cs">
-      <DependentUpon>FrmReporteMantenimientoPerfiles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoModulo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoModulo.Designer.cs">
-      <DependentUpon>FrmReporteMantenimientoModulo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportes\FrmReporteMantenimientoUsuario.Designer.cs">
-      <DependentUpon>FrmReporteMantenimientoUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +160,12 @@
     </Compile>
     <Compile Include="Mantenimiento2p2k26\FrmMantenimientoFacultades.Designer.cs">
       <DependentUpon>FrmMantenimientoFacultades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento2p2k26\frmReporteFacu\FrmReporteFacultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento2p2k26\frmReporteFacu\FrmReporteFacultad.Designer.cs">
+      <DependentUpon>FrmReporteFacultad.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources1.Designer.cs">
@@ -260,33 +212,6 @@
     <EmbeddedResource Include="FrmRecuperacion.resx">
       <DependentUpon>FrmRecuperacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteAsigAppPerf.resx">
-      <DependentUpon>FrmReporteAsigAppPerf.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteAsignacionAplicacionUsuario.resx">
-      <DependentUpon>FrmReporteAsignacionAplicacionUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteAsignacionPerfiles.resx">
-      <DependentUpon>FrmReporteAsignacionPerfiles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteBitacora.resx">
-      <DependentUpon>FrmReporteBitacora.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoAplicacioncs.resx">
-      <DependentUpon>FrmReporteMantenimientoAplicacioncs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoEmpleado.resx">
-      <DependentUpon>FrmReporteMantenimientoEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoPerfiles.resx">
-      <DependentUpon>FrmReporteMantenimientoPerfiles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoModulo.resx">
-      <DependentUpon>FrmReporteMantenimientoModulo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoUsuario.resx">
-      <DependentUpon>FrmReporteMantenimientoUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmSplash.resx">
       <DependentUpon>FrmSplash.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,6 +230,10 @@
     <EmbeddedResource Include="Mantenimiento2p2k26\FrmMantenimientoFacultades.resx">
       <DependentUpon>FrmMantenimientoFacultades.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento2p2k26\frmReporteFacu\FrmReporteFacultad.resx">
+      <DependentUpon>FrmReporteFacultad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento2p2k26\Reporte\RpReporteMantenimientoFacultad.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
       <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
@@ -340,6 +269,21 @@
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsPermisoAplicacion.datasource" />
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsRolInfo.datasource" />
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsSesionSeguridad.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.Ayudas.ClsValidacionDatos.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsCrudAcciones.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsCrudCoordinador.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsCrudFormulario.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsCrudGrid.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsCrudSeguridad.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsNavegadorAcciones.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsNavegadorAyuda.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsNavegadorBitacora.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsNavegadorPermisos.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsNavegadorSesion.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsSelectorLlave.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.ClsTipoColumna.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.formularios.ClsCrudEventos.datasource" />
+    <None Include="Properties\DataSources\CapaVista_Navegador.Navegador.datasource" />
     <None Include="Resources\fondo2.png" />
   </ItemGroup>
   <ItemGroup>

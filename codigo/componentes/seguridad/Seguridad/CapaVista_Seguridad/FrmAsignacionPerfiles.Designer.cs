@@ -225,7 +225,7 @@ namespace CapaVista_Seguridad
             this.BtnSeguridadReporte.Size = new System.Drawing.Size(105, 108);
             this.BtnSeguridadReporte.TabIndex = 20;
             this.BtnSeguridadReporte.UseVisualStyleBackColor = true;
-            this.BtnSeguridadReporte.Click += new System.EventHandler(this.BtnSeguridadReporte_Click);
+            //this.BtnSeguridadReporte.Click += new System.EventHandler(this.BtnSeguridadReporte_Click);
             // 
             // BtnSeguridadAnterior
             // 

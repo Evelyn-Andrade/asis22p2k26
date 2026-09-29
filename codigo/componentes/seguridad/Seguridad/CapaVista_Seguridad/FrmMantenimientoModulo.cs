@@ -24,7 +24,7 @@
 using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Objetos_de_valor;
 using CapaVista_Seguridad.Ayudas;
-using CapaVista_Seguridad.frmReportes;
+//using CapaVista_Seguridad.frmReportes;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -316,11 +316,11 @@ namespace CapaVista_Seguridad
         }
         private void SeguridadBtnRefrescar_Click(object sender, EventArgs e) { CargarDatos(); EstadoInicial(); }
 
-        private void SeguridadBtnImprimir_Click(object sender, EventArgs e)
+        /*private void SeguridadBtnImprimir_Click(object sender, EventArgs e)
         {
             FrmReporteMantenimientoModulo reporte = new FrmReporteMantenimientoModulo();
             reporte.Show();
-        }
+        }*/
 
         private void SeguridadBtnInicio_Click(object sender, EventArgs e) => bindingSource.MoveFirst();
         private void SeguridadBtnAnterior_Click(object sender, EventArgs e) => bindingSource.MovePrevious();

@@ -305,7 +305,7 @@
             this.SeguridadBtnImprimir.Size = new System.Drawing.Size(65, 65);
             this.SeguridadBtnImprimir.TabIndex = 6;
             this.SeguridadBtnImprimir.UseVisualStyleBackColor = false;
-            this.SeguridadBtnImprimir.Click += new System.EventHandler(this.SeguridadBtnImprimir_Click);
+           // this.SeguridadBtnImprimir.Click += new System.EventHandler(this.SeguridadBtnImprimir_Click);
             // 
             // SeguridadBtnConsultar
             // 

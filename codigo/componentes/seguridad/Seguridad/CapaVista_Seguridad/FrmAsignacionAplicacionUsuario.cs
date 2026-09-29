@@ -1,7 +1,7 @@
 ﻿using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Objetos_de_valor;
 using CapaVista_Seguridad.Ayudas;
-using CapaVista_Seguridad.frmReportes;
+//using CapaVista_Seguridad.frmReportes;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -320,10 +320,11 @@ namespace CapaVista_Seguridad
         }
 
 
-        private void SeguridadBtnReporte_Click(object sender, EventArgs e)
+       /* private void SeguridadBtnReporte_Click(object sender, EventArgs e)
         {
             FrmReporteAsignacionAplicacionUsuario reporte = new FrmReporteAsignacionAplicacionUsuario();
             reporte.Show();
         }
+       */
     }
 }

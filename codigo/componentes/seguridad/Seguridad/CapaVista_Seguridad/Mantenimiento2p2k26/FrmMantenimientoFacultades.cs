@@ -20,5 +20,10 @@ namespace CapaVista_Seguridad.Mantenimiento2p2k26
             InitializeComponent();
             navegador3.NavegadorMetConfigurar("facultades", ID_MODULO, ID_APLICACION);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

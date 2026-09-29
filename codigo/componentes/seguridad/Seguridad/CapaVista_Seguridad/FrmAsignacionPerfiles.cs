@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVista_Seguridad.frmReportes;
+//using CapaVista_Seguridad.frmReportes;
 
 
  /* ============================================================
@@ -38,7 +38,7 @@ namespace CapaVista_Seguridad
     public partial class FrmAsignacionPerfiles : Form
     {
         private DataGridView TablaActiva;
-        private FrmReporteAsignacionPerfiles reporteAsignacionPerfiles;
+        //private FrmReporteAsignacionPerfiles reporteAsignacionPerfiles;
         private const int ID_MODULO = 4;
         private const int ID_APLICACION = 9;
 
@@ -501,7 +501,7 @@ namespace CapaVista_Seguridad
             Help.ShowHelp(this, "C:/SeguridadAyudas/SeguridadAyudas.chm", "AsigPerfiles_Seguridad.html");
         }
 
-        private void BtnSeguridadReporte_Click(object sender, EventArgs e)
+        /*private void BtnSeguridadReporte_Click(object sender, EventArgs e)
         {
             if (reporteAsignacionPerfiles == null ||
                 reporteAsignacionPerfiles.IsDisposed)
@@ -519,7 +519,7 @@ namespace CapaVista_Seguridad
                 reporteAsignacionPerfiles.BringToFront();
                 reporteAsignacionPerfiles.Activate();
             }
-        }
+        }*/
     }
     }
 

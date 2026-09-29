@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVista_Seguridad.frmReportes;
+//using CapaVista_Seguridad.frmReportes;
 
 /*
  * ==================================================================
@@ -410,10 +410,10 @@ namespace CapaVista_Seguridad
         }
 
 
-        private void BtnSeguridadReporte_Click(object sender, EventArgs e)
-        {
-            FrmReporteAsigAppPerf reporte = new FrmReporteAsigAppPerf();
-            reporte.Show();
-        }
+        /* private void BtnSeguridadReporte_Click(object sender, EventArgs e)
+         {
+             FrmReporteAsigAppPerf reporte = new FrmReporteAsigAppPerf();
+             reporte.Show();
+        } */
     }
 }

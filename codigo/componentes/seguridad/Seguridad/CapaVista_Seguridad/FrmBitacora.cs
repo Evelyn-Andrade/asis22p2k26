@@ -24,7 +24,7 @@
 using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Objetos_de_valor;
 using CapaVista_Seguridad.Ayudas;
-using CapaVista_Seguridad.frmReportes;
+//using CapaVista_Seguridad.frmReportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,7 +54,7 @@ namespace CapaVista_Seguridad
 
             this.Load += FrmBitacora_Load;
             this.SeguridadBtnSalir.Click += new System.EventHandler(this.SeguridadBtnSalir_Click);
-            this.SeguridadBtnReporte.Click += new System.EventHandler(this.SeguridadBtnReporte_Click);
+            //this.SeguridadBtnReporte.Click += new System.EventHandler(this.SeguridadBtnReporte_Click);
             this.SeguridadBtnBuscar.Click += new System.EventHandler(this.SeguridadBtnBuscar_Click);
             this.SeguridadTxtBuscar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SeguridadTxtBuscar_KeyDown);
         }
@@ -216,7 +216,7 @@ namespace CapaVista_Seguridad
             }
         }
 
-        private void SeguridadBtnReporte_Click(object sender, EventArgs e)
+        /*private void SeguridadBtnReporte_Click(object sender, EventArgs e)
         {
             try
             {
@@ -227,7 +227,7 @@ namespace CapaVista_Seguridad
             {
                 MessageBox.Show("Error al abrir el reporte de bitácora: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        }*/
 
         private void SeguridadBtnAyuda_Click(object sender, EventArgs e)
         {

@@ -18,7 +18,7 @@ using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Modelos_de_controladores;
 using CapaControlador_Seguridad.Objetos_de_valor;
 using CapaVista_Seguridad.Ayudas;
-using CapaVista_Seguridad.frmReportes;
+//using CapaVista_Seguridad.frmReportes;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -328,10 +328,10 @@ namespace CapaVista_Seguridad
             }
         }
 
-        private void SeguridadBtnImprimir_Click(object sender, EventArgs e)
+       /* private void SeguridadBtnImprimir_Click(object sender, EventArgs e)
         {
             FrmReporteMantenimientoPerfiles reporte = new FrmReporteMantenimientoPerfiles();
             reporte.Show();
-        }
+        }*/
     }
 }

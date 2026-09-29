@@ -450,7 +450,7 @@ namespace CapaVista_Seguridad
             this.SeguridadBtnImprimir.Size = new System.Drawing.Size(89, 76);
             this.SeguridadBtnImprimir.TabIndex = 20;
             this.SeguridadBtnImprimir.UseVisualStyleBackColor = false;
-            this.SeguridadBtnImprimir.Click += new System.EventHandler(this.SeguridadBtnImprimir_Click);
+           // this.SeguridadBtnImprimir.Click += new System.EventHandler(this.SeguridadBtnImprimir_Click);
             // 
             // SeguridadBtnRefrescar
             // 

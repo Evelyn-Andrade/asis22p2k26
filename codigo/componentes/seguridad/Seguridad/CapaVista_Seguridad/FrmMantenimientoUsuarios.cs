@@ -17,7 +17,7 @@
 using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Objetos_de_valor;
 using CapaVista_Seguridad.Ayudas;
-using CapaVista_Seguridad.frmReportes;
+//using CapaVista_Seguridad.frmReportes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -346,7 +346,7 @@ namespace CapaVista_Seguridad
             this.Close();
         }
 
-        private void SeguridadBtnReporte_Click(object sender, EventArgs e)
+       /* private void SeguridadBtnReporte_Click(object sender, EventArgs e)
         {
             if (!_MisPermisos.PuedeImprimir)
             {
@@ -356,7 +356,7 @@ namespace CapaVista_Seguridad
             }
             FrmReporteMantenimientoUsuario reporte = new FrmReporteMantenimientoUsuario();
             reporte.Show();
-        }
+        }*/
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
