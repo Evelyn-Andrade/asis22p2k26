@@ -1,0 +1,35 @@
+commit 68cf67508a8780c48a3ac7bfdd96d2cfaff6a69e
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Tue Sep 29 10:21:27 2026 -0600
+
+    base de datos
+
+commit e5f6a1c8c6af391ba6131adb0675787698f31b2d
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Tue Sep 29 10:15:33 2026 -0600
+
+    subiendo reportes
+
+commit 07f85992ca33fa477c0cb443f579b72e1034e9a9
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Tue Sep 29 09:32:05 2026 -0600
+
+    navegador para la tabla facultades
+
+commit da2b276ec92f3077d646e0ab362d9acd2ab75453
+Author: Evelyn Andrade <eandradel2@miumg.edu.gt>
+Date:   Tue Sep 29 08:55:35 2026 -0600
+
+    agregando los componentes para hacer el mantenimiento
+
+commit 09c914bc936a71f534d186db4c688e073b58ecb1
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Mon Sep 28 18:43:48 2026 -0600
+
+    Inicial proyecto
+
+commit f414c498afdbaf970217efd1012204fbe9379647
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Mon Sep 28 18:41:50 2026 -0600
+
+    Initial commit
