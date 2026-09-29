@@ -25,6 +25,7 @@ using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Objetos_de_valor;
 using CapaVista_Navegador;
 using CapaVista_Seguridad.Ayudas;
+using CapaVista_Seguridad.Mantenimiento2p2k26;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -308,8 +309,8 @@ namespace CapaVista_Seguridad
 
         private void btnExamen_Click(object sender, EventArgs e)
         {
-            FrmVideo Video = new FrmVideo();
-            Video.ShowDialog();
+            FrmMantenimientoFacultades Facultad = new FrmMantenimientoFacultades();
+            Facultad.ShowDialog();
         }
     }
 }
