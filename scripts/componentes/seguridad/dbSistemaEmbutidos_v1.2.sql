@@ -1,6 +1,13 @@
 CREATE DATABASE IF NOT EXISTS `dbsistemaembutidos` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE `dbsistemaembutidos`;
 
+CREATE TABLE facultades (
+    codigo_facultad VARCHAR(5) NOT NULL,
+    nombre_facultad VARCHAR(45) NULL,
+    estatus_facultad VARCHAR(1) NULL,
+    PRIMARY KEY (codigo_facultad)
+);
+
 CREATE TABLE `tblempleado` (
   `idEmpleado` int NOT NULL AUTO_INCREMENT,
   `codigoEmpleado` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
