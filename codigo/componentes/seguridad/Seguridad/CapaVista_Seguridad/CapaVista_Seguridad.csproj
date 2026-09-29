@@ -264,7 +264,6 @@
     <EmbeddedResource Include="Reportes\RpReporteAsignacionPerfiles.rdlc" />
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Correo.ClsEnvioCorreo.datasource" />
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Correo.ClsPlantillaCorreoRecuperacion.datasource" />
-    <None Include="Properties\DataSources\CapaControlador_Seguridad.Modelos_de_controladores.ClsModeloAsigUsuPerf.datasource" />
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Modelos_de_controladores.ClsModeloMantenimientoApp.datasource" />
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsPermisoAplicacion.datasource" />
     <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsRolInfo.datasource" />

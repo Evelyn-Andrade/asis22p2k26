@@ -154,6 +154,48 @@ CREATE TABLE `tblbitacora` (
   CONSTRAINT `Fk_Bitacora_Usuario` FOREIGN KEY (`idUsuario`) REFERENCES `tblusuario` (`idUsuario`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=249 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
+-- COMPONENTE DE CONSULTAS 
+CREATE TABLE tblConsulta (
+    Pk_Consulta INT AUTO_INCREMENT,
+    nombreConsulta VARCHAR(100) NOT NULL,
+    tablaConsulta VARCHAR(255) NOT NULL, 
+    queryConsulta TEXT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+        ON UPDATE CURRENT_TIMESTAMP,
+
+    CONSTRAINT Pk_Consulta PRIMARY KEY (Pk_Consulta),
+    CONSTRAINT Uq_NombreConsulta UNIQUE (nombreConsulta)
+);
+
+-- COMPOMENTE DE REPORTEADOR
+-- TABLA: REPORTE
+CREATE TABLE tblReporte (
+    numeroReporte INT NOT NULL,
+    nombreReporte VARCHAR(150) NOT NULL,
+    rutaReporte VARCHAR(500) NOT NULL,
+    fechaReporte DATE NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    CONSTRAINT Pk_Reporte PRIMARY KEY (numeroReporte),
+    CONSTRAINT uqNombreReporte UNIQUE (nombreReporte)
+) ENGINE=InnoDB;
+-- TABLA INTERMEDIA: APLICACION - REPORTE
+CREATE TABLE tblAplicacionReporte (
+    idAplicacion INT NOT NULL,
+    numeroReporte INT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    CONSTRAINT Pk_AplicacionReporte PRIMARY KEY (idAplicacion, numeroReporte),
+    CONSTRAINT Fk_Aplicacion_IdAplicacion FOREIGN KEY (idAplicacion)
+        REFERENCES tblAplicacion (idAplicacion) ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT Fk_Reporte_NumeroReporte FOREIGN KEY (numeroReporte)
+        REFERENCES tblReporte (numeroReporte) ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB;
+-- INGRESOS DE SEGURIDAD
 INSERT INTO `tblempleado` VALUES (1,'EMP-001','1234567890123','1234567-K','Isabel','Meléndez','Coordinadora de Implementación','F','2000-05-14','2026-01-10','55512345','isabel@gmail.com',1,'2026-09-17 14:07:07','2026-09-23 23:40:07'),(2,'EMP-002','2345678901234','2345678K','Carlos','Ramírez','Analista de Sistemas','M','1998-03-22','2025-11-05','55523456','carlos.ramirez@terminus.com',1,'2026-09-17 14:07:07','2026-09-17 14:07:07'),(3,'EMP-003','3456789012345','3456789K','María','López','Administradora de Base de Datos','F','1995-09-30','2025-08-19','55534567','maria.lopez@terminus.com',1,'2026-09-17 14:07:07','2026-09-17 14:07:07'),(13,'EMP-006','8463778648763','3727836-7','Oscar Emilio','Morales Lemus','Gerente','M','2005-05-28','2026-09-21','32323232','oscaremilio@gmail.com',1,'2026-09-22 04:30:17','2026-09-22 04:30:17'),(14,'EMP-007','5463212315453','5454542-1','Empleado','Examen','Pruebas','F','1990-09-22','2026-09-22','87897654','prueba@gmail.com',1,'2026-09-22 13:11:30','2026-09-22 13:11:30'),(19,'EMP-010','9876543219876','9876543-2','Pruebas','Capacitacion','Probador','M','1990-01-01','2026-01-10','12345678','terminus.seguridad22026@gmail.com',1,'2026-09-23 23:42:57','2026-09-23 23:42:57');
 
 INSERT INTO `tblrol` VALUES (1,'Administrador','Rol con acceso total al sistema',1,'2026-09-17 14:07:07','2026-09-17 14:07:07'),(2,'Supervisor','Rol con acceso a reportes y aprobaciones',1,'2026-09-17 14:07:07','2026-09-17 14:07:07'),(11,'Pruebas','pruebas del sistema',0,'2026-09-18 21:45:38','2026-09-18 21:45:38'),(12,'PerfilExamen','Permisos personalizados para el examen',1,'2026-09-22 13:16:29','2026-09-22 13:16:29'),(14,'Prueba','Esta es una prueba controlada por parte de Seguridad',1,'2026-09-23 23:47:34','2026-09-23 23:47:34');
@@ -176,7 +218,7 @@ INSERT INTO `tblbitacora` VALUES (1,1,'INSERT','tblEmpleado',1,'Alta de empleado
 
 
 
-
+-- VISTAS DE SEGURIDAD 
 SELECT a.idModulo, a.idAplicacion, a.nombreAplicacion, r.nombreRol,
        rma.derInsertarRolModuloAplicacion AS Insertar,
        rma.derEditarRolModuloAplicacion AS Editar,
@@ -192,3 +234,6 @@ SELECT idAplicacion, nombreAplicacion
 FROM tblAplicacion
 WHERE idModulo = (SELECT idModulo FROM tblModulo WHERE nombreModulo = 'Seguridad')
 ORDER BY idAplicacion;
+
+USE `dbsistemaembutidos`;
+select * FROM tblusuario;
